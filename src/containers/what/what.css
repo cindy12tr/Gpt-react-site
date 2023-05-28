@@ -1,0 +1,54 @@
+.what{
+background:-webkit-linear-gradient(148deg, #5c20b6 0%, #5555af 50%, #310c88 80%);
+background:-o-linear-gradient(148deg, #5c20b6 0%, #5555af 50%, #310c88 80%);
+background:-moz-linear-gradient(148deg, #5c20b6 0%, #5555af 50%, #310c88 80%);
+background:linear-gradient(148deg, #5c20b6 0%, #5555af 50%, #310c88 80%);
+font-family: var(--font-family);
+}
+.what-feature{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.what-container {
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+margin-top: 2rem;
+gap: 1rem;
+}
+.what-container .features{
+    display: flex;
+    flex-direction: column;
+}
+.what-heading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    margin: 2rem 0 2rem;
+}
+.what-heading h1{
+max-width: 510px;
+}
+.what-heading p{
+    color: var(--color-subtext);
+    font-size: 1.25rem;
+    cursor: pointer;
+    
+}
+@media screen and (max-width: 650px) {
+    .what-container{
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 350px){
+        .what-container{
+            min-width: 100%;
+            margin: 1rem 0;
+        }
+    }
+}

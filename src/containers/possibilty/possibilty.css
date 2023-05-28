@@ -1,0 +1,42 @@
+.possibilty{
+    display: flex;
+    font-family: var(--font-family);
+    gap: 2rem;
+}
+.possibilty-img{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.possibilty-img img{
+    width: 100%;
+    height: 100%;
+}
+.possibilty-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    
+}
+.possibilty-content h4{
+    color: rgb(104, 104, 160);
+    font-size: 1rem;
+}
+.possibilty-content h4:last-child{
+    
+}
+
+.possibilty-content p{
+    color:#fff;
+}
+@media screen and (max-width: 950px) {
+    .possibilty{
+        flex-direction: column;
+    }
+    .possibilty-img{
+    margin: 1rem 0;
+    }
+}
